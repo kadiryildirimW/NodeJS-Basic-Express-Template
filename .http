@@ -1,0 +1,21 @@
+###
+POST http://localhost:3000/user/register HTTP/1.1
+content-Type: application/json
+
+{
+  "email": "admin@mail.com",
+  "password": "admin"
+}
+
+###
+POST http://localhost:3000/user/login HTTP/1.1
+content-Type: application/json
+
+{
+  "email": "admin@mail.com",
+  "password": "admin"
+}
+
+###
+GET http://localhost:3000/user/session HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWZjZGEwYmNjMTU5N2Y4ODYzMjcyMyIsImlhdCI6MTY1NDY0MDA1MSwiZXhwIjoxNjU0OTU1NDExfQ.GPdiGfRsdIPTzMhZQDfY0Bt62EAdX5MYKbXAux2Z18A
